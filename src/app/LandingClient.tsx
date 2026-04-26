@@ -67,7 +67,7 @@ export default function LandingClient({ user, hasResults }: LandingClientProps) 
               {t.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
-              <a href="/paywall" className="w-full sm:w-auto px-8 py-4 bg-[#6FA8A3] text-white rounded-full font-bold text-sm sm:text-base shadow-lg shadow-[#6FA8A3]/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center">
+              <a href={user ? "/paywall" : "/login?message=Please sign in to take the test"} className="w-full sm:w-auto px-8 py-4 bg-[#6FA8A3] text-white rounded-full font-bold text-sm sm:text-base shadow-lg shadow-[#6FA8A3]/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center">
                 {t.hero.startTest}
               </a>
               <button className="w-full sm:w-auto px-8 py-4 bg-[#e9e2d7] text-[#2d6763] rounded-full font-bold text-sm sm:text-base hover:bg-[#ccc6bc] transition-all">
