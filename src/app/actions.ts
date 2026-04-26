@@ -92,6 +92,32 @@ export async function submitTest(formData: FormData) {
   redirect(`/results`);
 }
 
+export async function saveTestResult(personalityType: string) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) {
+    throw new Error('Not authenticated');
+  }
+
+  const { error } = await supabase
+    .from('test_results')
+    .insert([
+      {
+        user_id: user.id,
+        personality_type: personalityType, // This is the RIASEC code (e.g. 'IR')
+        top_careers: JSON.stringify([]) // We look these up dynamically now based on the code
+      }
+    ]);
+
+  if (error) {
+    console.error('Error saving test result:', error);
+    throw error;
+  }
+
+  return { success: true };
+}
+
 export async function fetchUserResults(userId: string) {
   const supabase = await createClient();
   const { data, error } = await supabase

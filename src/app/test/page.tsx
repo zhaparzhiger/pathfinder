@@ -47,7 +47,8 @@ export default function TestPage({ user }: { user: any }) {
       startTransition(async () => {
         const counts: Record<string, number> = {};
         newAnswers.forEach(ans => { counts[ans] = (counts[ans] || 0) + 1; });
-        const personalityType = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+        const sortedTypes = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+        const personalityType = sortedTypes.slice(0, 2).map(t => t[0]).join('');
         
         await saveTestResult(personalityType);
         router.push('/results');
