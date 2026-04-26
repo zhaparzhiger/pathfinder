@@ -120,7 +120,7 @@ export default function TestPage() {
               </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                {currentQuestion.options.map((option, idx) => (
+                {currentQuestion.options.map((option: any, idx: number) => (
                   <button 
                     key={idx}
                     onClick={() => handleAnswer(option.type)}

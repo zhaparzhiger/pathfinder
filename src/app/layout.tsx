@@ -4,7 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   display: 'swap',
   variable: "--font-plus-jakarta",
 });

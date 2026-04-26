@@ -101,7 +101,7 @@ export default function ResultsClient({ user, result }: ResultsClientProps) {
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {topCareers.map((career, i) => (
+            {topCareers.map((career: any, i: number) => (
               <div key={i} className="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-14 h-14 bg-[#6FA8A3]/10 rounded-2xl flex items-center justify-center mb-6 text-[#6FA8A3]">
                   <span className="material-symbols-outlined text-3xl">{career.icon}</span>
