@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Career Path | Pathfinder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#2d6763",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container-low": "#f2f4f3",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#ce8e79",
+                    "surface-container-low": "#f2f4f3",
+                    "surface-container-high": "#e7e8e7",
+                    "on-secondary-fixed-variant": "#4a463f",
+                    "surface-dim": "#d9dad9",
+                    "outline": "#707977",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#e9e2d7",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#003c39",
+                    "secondary": "#625e56",
+                    "on-secondary-container": "#68645c",
+                    "on-background": "#191c1c",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e1e3e2",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#b3eee8",
+                    "surface-container": "#edeeed",
+                    "primary-fixed-dim": "#97d1cc",
+                    "on-tertiary-fixed": "#351004",
+                    "primary": "#2d6763",
+                    "on-tertiary-fixed-variant": "#6a3a29",
+                    "tertiary": "#86513f",
+                    "on-error-container": "#93000a",
+                    "background": "#f8faf8",
+                    "on-surface-variant": "#404947",
+                    "surface": "#f8faf8",
+                    "secondary-container": "#e9e2d7",
+                    "on-secondary-fixed": "#1e1b15",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#bfc8c7",
+                    "on-surface": "#191c1c",
+                    "inverse-on-surface": "#eff1f0",
+                    "on-primary-fixed-variant": "#0e4f4b",
+                    "inverse-surface": "#2e3130",
+                    "secondary-fixed-dim": "#ccc6bc",
+                    "tertiary-fixed-dim": "#fcb69f",
+                    "on-primary-fixed": "#00201e",
+                    "primary-container": "#6fa8a3",
+                    "on-tertiary-container": "#542819",
+                    "inverse-primary": "#97d1cc",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f8faf8",
+                    "surface-container-highest": "#e1e3e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "lg": "48px",
+                    "container-max": "1120px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "button": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "button": ["16px", {"lineHeight": "1", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F5F3EF;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-[#E6DFD5] dark:border-slate-800 shadow-sm shadow-[#6FA8A3]/5 sticky top-0 z-50">
+<div class="flex justify-between items-center max-w-[1120px] mx-auto px-6 h-16">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#6FA8A3] dark:text-[#88C4BF] tracking-tighter">Pathfinder</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#6FA8A3] transition-colors font-label-md text-label-md" href="#">Assessments</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#6FA8A3] transition-colors font-label-md text-label-md" href="#">Careers</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#6FA8A3] transition-colors font-label-md text-label-md" href="#">Resources</a>
+<a class="text-[#6FA8A3] dark:text-[#88C4BF] font-semibold border-b-2 border-[#6FA8A3] pb-1 font-label-md text-label-md" href="#">Results</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block text-slate-600 dark:text-slate-400 font-button text-button px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all rounded-xl">Sign In</button>
+<button class="bg-[#6FA8A3] text-white px-6 py-2.5 rounded-xl font-button text-button shadow-md shadow-[#6FA8A3]/20 hover:scale-[1.02] active:scale-95 transition-all">Get Started</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1120px] mx-auto px-6 py-12 md:py-16">
+<!-- Personality Profile Section -->
+<section class="mb-16">
+<div class="bg-white rounded-3xl p-8 md:p-12 shadow-[0_4px_24px_rgba(111,168,163,0.06)] flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#6FA8A3]/20 to-[#F4A261]/10">
+<div class="w-4/5 h-4/5 rounded-full overflow-hidden border-4 border-white shadow-xl">
+<img class="w-full h-full object-cover" data-alt="vibrant abstract digital art representing a calm and focused mind with floating geometric shapes in soft teal and orange" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU8D3o61CBImSeWH49aqpJmLGeSMU_jWTzkwsUoJcGRM3FqL_xelRbKMd5mVOtrHp9E0G_ZhVraaRvwiGJRVFcxrRPi8LmYrdSc16gWspt-mZ9eWxpMtbQSxOM9qAtNdd9en8rhl5yrkhRFMqnkk2U1-sQgEF9gPjckBBWt_GXgAnbnYFDXZEIJfka9sTL_y_SbV2Jq0-y1j464YcnRmhQSnSifxr_J979-w-l9vtTOLGG2aRe13hfF9O9KXwKiYyh5e_dc784Fgo"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-white p-3 rounded-2xl shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[#6FA8A3]" data-icon="psychology">psychology</span>
+<span class="font-bold text-slate-800">100% Match</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<span class="inline-block px-4 py-1.5 rounded-full bg-[#F4A261]/15 text-[#F4A261] font-label-md text-label-md mb-4">Personality Profile</span>
+<h1 class="font-display-lg text-display-lg text-slate-900 mb-4">Investigator + Conventional</h1>
+<p class="font-body-lg text-body-lg text-slate-600 mb-6 leading-relaxed">
+                        You thrive in environments that require careful analysis, logical reasoning, and structured organization. Your strength lies in taking complex data and turning it into clear, actionable plans.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-[#6FA8A3]/10 text-[#6FA8A3] rounded-xl font-label-md">Analytical Thinking</span>
+<span class="px-4 py-2 bg-[#6FA8A3]/10 text-[#6FA8A3] rounded-xl font-label-md">Problem Solver</span>
+<span class="px-4 py-2 bg-[#6FA8A3]/10 text-[#6FA8A3] rounded-xl font-label-md">Detail-Oriented</span>
+<span class="px-4 py-2 bg-[#6FA8A3]/10 text-[#6FA8A3] rounded-xl font-label-md">Structured</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recommended Careers Grid -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-slate-900 mb-2">Recommended Careers</h2>
+<p class="text-slate-500">Based on your psychological profile and skills.</p>
+</div>
+<button class="text-[#6FA8A3] font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    View all paths <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Career Card 1 -->
+<div class="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-14 h-14 bg-[#6FA8A3]/10 rounded-2xl flex items-center justify-center mb-6 text-[#6FA8A3]">
+<span class="material-symbols-outlined text-3xl" data-icon="analytics">analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Data Scientist</h3>
+<p class="text-slate-500 mb-6 font-body-md line-clamp-3">Analyze complex data sets to help organizations make strategic decisions. Perfect for your analytical mind.</p>
+<div class="pt-6 border-t border-slate-100 flex justify-between items-center">
+<span class="text-sm font-semibold text-slate-400">98% Fit</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-[#6FA8A3] transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Career Card 2 -->
+<div class="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-14 h-14 bg-[#6FA8A3]/10 rounded-2xl flex items-center justify-center mb-6 text-[#6FA8A3]">
+<span class="material-symbols-outlined text-3xl" data-icon="biotech">biotech</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Biostatistician</h3>
+<p class="text-slate-500 mb-6 font-body-md line-clamp-3">Apply mathematical principles to biology and healthcare research. Combines investigation with impact.</p>
+<div class="pt-6 border-t border-slate-100 flex justify-between items-center">
+<span class="text-sm font-semibold text-slate-400">92% Fit</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-[#6FA8A3] transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Career Card 3 -->
+<div class="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-14 h-14 bg-[#6FA8A3]/10 rounded-2xl flex items-center justify-center mb-6 text-[#6FA8A3]">
+<span class="material-symbols-outlined text-3xl" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Systems Architect</h3>
+<p class="text-slate-500 mb-6 font-body-md line-clamp-3">Design and implement complex IT infrastructures. Ideal for your high structural preference.</p>
+<div class="pt-6 border-t border-slate-100 flex justify-between items-center">
+<span class="text-sm font-semibold text-slate-400">89% Fit</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-[#6FA8A3] transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+<!-- Market Potential Kazakhstan -->
+<div class="md:col-span-7 bg-white p-8 rounded-3xl shadow-sm border border-slate-50">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-[#6FA8A3]" data-icon="payments">payments</span>
+<h2 class="font-headline-md text-headline-md">Market Potential in Kazakhstan</h2>
+</div>
+<div class="space-y-8">
+<div>
+<div class="flex justify-between items-end mb-4">
+<span class="text-slate-500 font-label-md uppercase tracking-wider">Salary Range (Monthly)</span>
+<span class="font-bold text-2xl text-[#6FA8A3]">450,000 - 1,200,000 ₸</span>
+</div>
+<div class="w-full h-4 bg-[#E6DFD5] rounded-full overflow-hidden flex">
+<div class="w-1/4 h-full bg-slate-200"></div>
+<div class="w-1/2 h-full bg-[#6FA8A3]"></div>
+</div>
+<div class="flex justify-between mt-2 text-xs text-slate-400 font-medium">
+<span>Junior Range</span>
+<span>Mid-Level / Senior</span>
+<span>Top Tier</span>
+</div>
+</div>
+<div class="p-6 bg-[#F5F3EF] rounded-2xl">
+<h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+                            High Demand Area
+                        </h4>
+<p class="text-sm text-slate-600 leading-relaxed">The Tech and Finance sectors in Almaty and Astana are experiencing a 15% annual growth in demand for data-centric roles. Specialists with bilingual skills (Kazakh/English) command a 20% premium.</p>
+</div>
+</div>
+</div>
+<!-- Why This Fits You -->
+<div class="md:col-span-5 bg-[#2d6763] p-8 rounded-3xl text-white shadow-xl shadow-[#2d6763]/10 flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md mb-6">Why this fits you</h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="check_circle">check_circle</span>
+<p class="text-primary-fixed text-sm leading-relaxed">Your low 'Extraversion' score means you'll excel in deep-work environments where focus is valued over constant meetings.</p>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="check_circle">check_circle</span>
+<p class="text-primary-fixed text-sm leading-relaxed">High 'Conscientiousness' ensures you'll manage the complex project management aspects of senior technical roles effortlessly.</p>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="check_circle">check_circle</span>
+<p class="text-primary-fixed text-sm leading-relaxed">Natural 'Curiosity' allows you to stay ahead in fast-evolving technical fields without feeling burnt out.</p>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10">
+<p class="text-xs text-primary-fixed-dim italic">"Your path is one of steady mastery and profound expertise."</p>
+</div>
+</div>
+</section>
+<!-- Where to Study -->
+<section>
+<h2 class="font-headline-lg text-headline-lg text-slate-900 mb-8">Where to Study</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- University 1 -->
+<div class="bg-white p-4 pr-8 rounded-3xl shadow-sm border border-slate-50 flex items-center gap-6 group hover:border-[#6FA8A3]/30 transition-all">
+<div class="w-24 h-24 rounded-2xl bg-slate-100 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="grand classical university building facade with tall columns and lush green campus landscaping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwCpUMgH_4KopNFkxP0nvKH9oXcCT5VByD3NmQAM-FoWGSrfvbeLVj7M0mhbFj7nBMF_s3WHXspesbwrkN559Ky2oX0Z5XdjgutMyQKxZXSif33ROB2_481VHnm7hDp9zHabladupMKYqi1YqK2SQ6BjpN8iwtqE86RjSb-aiPc9KUqCFsMY4TGOSQBq3Cowtcepziapa0ncvpLJcA7Gsh3xaSSib9YuJ2wxLfwudr1vtr2vj-kdNjq82jjDrM7V6Hw4Wem9U5Q4c"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-slate-900">Nazarbayev University</h3>
+<span class="text-[10px] font-bold text-[#6FA8A3] bg-[#6FA8A3]/10 px-2 py-0.5 rounded uppercase">Rank #1</span>
+</div>
+<p class="text-sm text-slate-500 mb-2">Astana, Kazakhstan</p>
+<div class="flex items-center gap-4">
+<span class="text-xs font-semibold flex items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined text-xs" data-icon="school">school</span> Data Sci, AI
+                            </span>
+<span class="text-xs font-semibold flex items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span> ABET Accredited
+                            </span>
+</div>
+</div>
+</div>
+<!-- University 2 -->
+<div class="bg-white p-4 pr-8 rounded-3xl shadow-sm border border-slate-50 flex items-center gap-6 group hover:border-[#6FA8A3]/30 transition-all">
+<div class="w-24 h-24 rounded-2xl bg-slate-100 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="modern glass and steel university library interior with students studying in a bright open space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Q6t8poIujoOo_TOKYg36lxKFz1VHeKYPLQPsCCKa59XIDgEVPCe9Gp7h3oOkwIUUR9x7jXKa9DRml2wCo8KHQCzFYuul5v5RfMGgCLG1P1_lehp3z6GOqy4yKXq8iMC0nCyBC4zBjHPDwlx_jHam9mUStgmsMGDLUZkUBp_6nNy0y-sVP_dbHEbQEdwvf4sZwxBZuUjvDj8xT3PibmrftU9GBG84Ki3ZgUcpziprzZa4T1xA5RjUtpYZ5IJoKIXSbgp3957lrzM"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-slate-900">KBTU</h3>
+<span class="text-[10px] font-bold text-[#6FA8A3] bg-[#6FA8A3]/10 px-2 py-0.5 rounded uppercase">Top Tech</span>
+</div>
+<p class="text-sm text-slate-500 mb-2">Almaty, Kazakhstan</p>
+<div class="flex items-center gap-4">
+<span class="text-xs font-semibold flex items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined text-xs" data-icon="school">school</span> Software Eng
+                            </span>
+<span class="text-xs font-semibold flex items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined text-xs" data-icon="handshake">handshake</span> Industry Links
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F5F3EF] dark:bg-slate-950 border-t border-[#E6DFD5] dark:border-slate-800 w-full py-12 px-6 mt-auto">
+<div class="max-w-[1120px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-bold text-[#6FA8A3] text-xl">Pathfinder</span>
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-slate-500 text-center md:text-left max-w-xs">
+                    © 2024 Pathfinder Career Guidance. Supporting student journeys with care.
+                </p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-[#6FA8A3] transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#6FA8A3] transition-colors text-sm font-medium" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#6FA8A3] transition-colors text-sm font-medium" href="#">Help Center</a>
+<a class="text-slate-500 hover:text-[#6FA8A3] transition-colors text-sm font-medium" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-white dark:bg-slate-900 border-t border-[#E6DFD5] dark:border-slate-800 shadow-[0_-4px_20px_rgba(111,168,163,0.08)] z-50">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Test</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#6FA8A3]/10 text-[#6FA8A3] rounded-xl px-4 py-1">
+<span class="material-symbols-outlined" data-icon="insights" data-weight="fill" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Results</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Profile</span>
+</div>
+</nav>
+</body></html>
