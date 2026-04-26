@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { signout } from './login/actions';
 import ProfileDropdown from '@/components/ProfileDropdown';
@@ -11,6 +12,14 @@ interface LandingClientProps {
 
 export default function LandingClient({ user, hasResults }: LandingClientProps) {
   const { language, setLanguage, t } = useLanguage();
+  const [showHowItWorks, setShowHowItWorks] = useState(false);
+
+  const scrollToHowItWorks = () => {
+    const element = document.getElementById('how-it-works');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#F5F3EF] flex flex-col font-sans overflow-x-hidden">
@@ -66,13 +75,31 @@ export default function LandingClient({ user, hasResults }: LandingClientProps) 
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4">
               {t.hero.description}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 relative">
               <a href={user ? "/paywall" : "/login?message=Please sign in to take the test"} className="w-full sm:w-auto px-8 py-4 bg-[#6FA8A3] text-white rounded-full font-bold text-sm sm:text-base shadow-lg shadow-[#6FA8A3]/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center">
                 {t.hero.startTest}
               </a>
-              <button className="w-full sm:w-auto px-8 py-4 bg-[#e9e2d7] text-[#2d6763] rounded-full font-bold text-sm sm:text-base hover:bg-[#ccc6bc] transition-all">
-                {t.howItWorks.title}
-              </button>
+              
+              <div className="relative w-full sm:w-auto group">
+                <button 
+                  onClick={scrollToHowItWorks}
+                  onMouseEnter={() => setShowHowItWorks(true)}
+                  onMouseLeave={() => setShowHowItWorks(false)}
+                  className="w-full sm:w-auto px-8 py-4 bg-[#e9e2d7] text-[#2d6763] rounded-full font-bold text-sm sm:text-base hover:bg-[#ccc6bc] transition-all"
+                >
+                  {t.hero.howItWorks}
+                </button>
+                
+                {/* Tooltip/Info Popup */}
+                <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-64 p-4 bg-white rounded-2xl shadow-xl border border-[#E6DFD5] text-left transition-all duration-300 pointer-events-none z-50 ${showHowItWorks ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {language === 'ru' ? 'Тест основан на методике RIASEC. 30 вопросов помогут определить ваши сильные стороны и подходящие профессии.' : 
+                     language === 'kz' ? 'Тест RIASEC әдістемесіне негізделген. 30 сұрақ сіздің мықты жақтарыңыз бен қолайлы мамандықтарыңызды анықтауға көмектеседі.' : 
+                     'The test is based on the RIASEC methodology. 30 questions will help identify your strengths and suitable professions.'}
+                  </p>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] sm:w-[120%] h-full -z-10 pointer-events-none opacity-40">
@@ -125,7 +152,7 @@ export default function LandingClient({ user, hasResults }: LandingClientProps) 
           </div>
         </section>
 
-        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <section id="how-it-works" className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
           <div className="max-w-[1120px] mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-10 sm:gap-16">
               <div className="w-full md:w-1/2">
@@ -167,7 +194,7 @@ export default function LandingClient({ user, hasResults }: LandingClientProps) 
             <div className="relative z-10 text-white">
               <h2 className="text-2xl sm:text-5xl font-bold mb-4 sm:mb-6">{t.cta.title}</h2>
               <p className="text-white/80 text-sm sm:text-lg max-w-xl mx-auto mb-8 sm:mb-10">{t.cta.subtitle}</p>
-              <a href="/paywall" className="inline-block px-8 py-4 sm:px-10 sm:py-5 bg-white text-[#2d6763] rounded-full font-bold hover:shadow-xl transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
+              <a href={user ? "/paywall" : "/login?message=Please sign in to take the test"} className="inline-block px-8 py-4 sm:px-10 sm:py-5 bg-white text-[#2d6763] rounded-full font-bold hover:shadow-xl transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
                 {t.cta.button}
               </a>
             </div>

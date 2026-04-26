@@ -53,7 +53,7 @@ export async function signup(formData: FormData) {
   }
 
   revalidatePath('/', 'layout')
-  redirect('/login?message=Registration successful! Please check your email for a confirmation link before logging in.')
+  redirect('/paywall')
 }
 
 export async function signout() {
